@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Fb-07-9oi">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="gAM-9d-Oud">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="6Fb-07-9oi" customClass="HomeVC" customModule="tantawy_Localization" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZuF-o7-z5H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bghome" translatesAutoresizingMaskIntoConstraints="NO" id="bVv-D1-xuG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgW-gs-rTZ" customClass="CustomButton" customModule="tantawy_Localization" customModuleProvider="target">
+                                <rect key="frame" x="85" y="261.5" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="48a-yE-X5A"/>
+                                    <constraint firstAttribute="width" constant="150" id="Lep-DB-kgN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Press here">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="اضغط هنا"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Press here"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="PressShowAlert:" destination="6Fb-07-9oi" eventType="touchUpInside" id="YMt-PD-odE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7w-Rx-ooh">
+                                <rect key="frame" x="16" y="20" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="66u-XN-Ja5"/>
+                                    <constraint firstAttribute="width" constant="45" id="UYC-bJ-xRK"/>
+                                </constraints>
+                                <state key="normal" image="lefticon"/>
+                                <connections>
+                                    <action selector="PressBack:" destination="6Fb-07-9oi" eventType="touchUpInside" id="5Ud-C1-rLx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CgW-gs-rTZ" firstAttribute="centerY" secondItem="goE-fk-ZgN" secondAttribute="centerY" id="Fo9-Wt-z09"/>
+                            <constraint firstItem="bVv-D1-xuG" firstAttribute="leading" secondItem="goE-fk-ZgN" secondAttribute="leading" id="XJH-p1-08X"/>
+                            <constraint firstItem="bVv-D1-xuG" firstAttribute="top" secondItem="goE-fk-ZgN" secondAttribute="top" id="aST-Pn-BUf"/>
+                            <constraint firstItem="u7w-Rx-ooh" firstAttribute="leading" secondItem="goE-fk-ZgN" secondAttribute="leading" constant="16" id="aUm-eu-6Rk"/>
+                            <constraint firstItem="CgW-gs-rTZ" firstAttribute="centerX" secondItem="goE-fk-ZgN" secondAttribute="centerX" id="bhN-fh-sgq"/>
+                            <constraint firstItem="u7w-Rx-ooh" firstAttribute="top" secondItem="goE-fk-ZgN" secondAttribute="top" constant="20" id="erv-nf-M5F"/>
+                            <constraint firstItem="goE-fk-ZgN" firstAttribute="bottom" secondItem="bVv-D1-xuG" secondAttribute="bottom" id="gBp-qB-Oqi"/>
+                            <constraint firstItem="goE-fk-ZgN" firstAttribute="trailing" secondItem="bVv-D1-xuG" secondAttribute="trailing" id="kb1-cA-hnX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="goE-fk-ZgN"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="u7w-Rx-ooh" id="sBX-BE-zkD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEb-0M-k1D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bghome" width="275" height="80.5"/>
+        <image name="lefticon" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ocq-Nj-q7w">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose LangVC-->
+        <scene sceneID="v3w-dN-uhL">
+            <objects>
+                <viewController storyboardIdentifier="ChooseLangVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ocq-Nj-q7w" customClass="ChooseLangVC" customModule="tantawy_Localization" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xrb-ce-ocw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bghome" translatesAutoresizingMaskIntoConstraints="NO" id="DHa-wm-v0t">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGA-mO-0eM" customClass="CustomButton" customModule="tantawy_Localization" customModuleProvider="target">
+                                <rect key="frame" x="85" y="351" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9rP-aO-cK6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Arabic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="اللغه العربيه"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Arabic"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="PressArabic:" destination="Ocq-Nj-q7w" eventType="touchUpInside" id="ec9-6Z-WRM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Language" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-YX-1GE" customClass="CustomLabel" customModule="tantawy_Localization" customModuleProvider="target">
+                                <rect key="frame" x="46" y="207" width="228" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="اختار اللغه"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Choose Language"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zr-Sl-WU3" customClass="CustomButton" customModule="tantawy_Localization" customModuleProvider="target">
+                                <rect key="frame" x="85" y="285" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ZMj-4p-Dwk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="English">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="اللغه الانجليزيه"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="English"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="PressEnglish:" destination="Ocq-Nj-q7w" eventType="touchUpInside" id="457-3z-ETr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e13-mM-1g1" customClass="RoundedButton" customModule="tantawy_Localization" customModuleProvider="target">
+                                <rect key="frame" x="85" y="426" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="QNa-gG-yir"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="تسجيل الدخول"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="Login"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goLogin:" destination="Ocq-Nj-q7w" eventType="touchUpInside" id="v4G-N2-ftl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lGA-mO-0eM" firstAttribute="top" secondItem="2Zr-Sl-WU3" secondAttribute="bottom" constant="21" id="2d6-oU-Os7"/>
+                            <constraint firstItem="lGA-mO-0eM" firstAttribute="top" secondItem="2Zr-Sl-WU3" secondAttribute="bottom" constant="21" id="65l-Gm-q0F"/>
+                            <constraint firstItem="2Zr-Sl-WU3" firstAttribute="top" secondItem="6nc-YX-1GE" secondAttribute="bottom" constant="57" id="70n-Gh-9Ef"/>
+                            <constraint firstItem="AxM-WL-Wb6" firstAttribute="trailing" secondItem="e13-mM-1g1" secondAttribute="trailing" constant="85" id="Gup-hJ-ybj"/>
+                            <constraint firstItem="AxM-WL-Wb6" firstAttribute="trailing" secondItem="2Zr-Sl-WU3" secondAttribute="trailing" constant="85" id="H3d-Gx-Bik"/>
+                            <constraint firstItem="AxM-WL-Wb6" firstAttribute="trailing" secondItem="lGA-mO-0eM" secondAttribute="trailing" constant="85" id="Hyc-TC-8Xp"/>
+                            <constraint firstItem="6nc-YX-1GE" firstAttribute="leading" secondItem="AxM-WL-Wb6" secondAttribute="leading" constant="46" id="JOY-xH-Ua5"/>
+                            <constraint firstAttribute="trailing" secondItem="DHa-wm-v0t" secondAttribute="trailing" id="MwS-kd-pZ4"/>
+                            <constraint firstItem="lGA-mO-0eM" firstAttribute="leading" secondItem="AxM-WL-Wb6" secondAttribute="leading" constant="85" id="NVg-yf-knR"/>
+                            <constraint firstItem="e13-mM-1g1" firstAttribute="leading" secondItem="AxM-WL-Wb6" secondAttribute="leading" constant="85" id="Q2D-KP-8du"/>
+                            <constraint firstItem="2Zr-Sl-WU3" firstAttribute="leading" secondItem="AxM-WL-Wb6" secondAttribute="leading" constant="85" id="TT5-bn-qLr"/>
+                            <constraint firstItem="6nc-YX-1GE" firstAttribute="top" secondItem="AxM-WL-Wb6" secondAttribute="top" constant="207" id="XR8-hR-TLX"/>
+                            <constraint firstItem="e13-mM-1g1" firstAttribute="top" secondItem="lGA-mO-0eM" secondAttribute="bottom" constant="30" id="egg-RS-HOt"/>
+                            <constraint firstItem="DHa-wm-v0t" firstAttribute="top" secondItem="AxM-WL-Wb6" secondAttribute="top" id="f45-pP-DNH"/>
+                            <constraint firstItem="2Zr-Sl-WU3" firstAttribute="top" secondItem="6nc-YX-1GE" secondAttribute="bottom" constant="57" id="iN9-mx-4Ur"/>
+                            <constraint firstItem="DHa-wm-v0t" firstAttribute="leading" secondItem="Xrb-ce-ocw" secondAttribute="leading" id="mtV-XJ-yMM"/>
+                            <constraint firstAttribute="bottom" secondItem="DHa-wm-v0t" secondAttribute="bottom" id="qf8-T6-Kwj"/>
+                            <constraint firstItem="AxM-WL-Wb6" firstAttribute="trailing" secondItem="6nc-YX-1GE" secondAttribute="trailing" constant="46" id="yDN-Ty-8eT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AxM-WL-Wb6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Or-CI-zeT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-307.5" y="319.01408450704224"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="dKz-i4-j76">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="CZS-8B-ESB" customClass="LoginVC" customModule="tantawy_Localization" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YdE-93-hRh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VDb-FO-AUY">
+                                <rect key="frame" x="16" y="183" width="288" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RM9-Pd-BGs" customClass="customTextField" customModule="tantawy_Localization" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="wo1-77-uOJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="رقم الهاتف"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="phone number"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="phone number"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zjZ-dS-QD4" customClass="customTextField" customModule="tantawy_Localization" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55" width="288" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="w8x-ik-4CP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="الرقم السري"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="password"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" red="0.97254901959999995" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeHolderText" value="الرقم السري"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zjZ-dS-QD4" firstAttribute="width" secondItem="VDb-FO-AUY" secondAttribute="width" id="B08-FW-SZR"/>
+                                    <constraint firstItem="RM9-Pd-BGs" firstAttribute="width" secondItem="VDb-FO-AUY" secondAttribute="width" id="pWq-9j-zWf"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdO-fn-Tge" customClass="RoundedButton" customModule="tantawy_Localization" customModuleProvider="target">
+                                <rect key="frame" x="85" y="360" width="150" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="BMg-2E-cfN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRaduis">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arabicText" value="تسجيل الدخول"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="englishText" value="login"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="PressLogin:" destination="CZS-8B-ESB" eventType="touchUpInside" id="QRi-9n-d0o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D2b-NW-I6p" firstAttribute="trailing" secondItem="mdO-fn-Tge" secondAttribute="trailing" constant="85" id="0UP-Me-xGQ"/>
+                            <constraint firstItem="mdO-fn-Tge" firstAttribute="leading" secondItem="D2b-NW-I6p" secondAttribute="leading" constant="85" id="NiF-1k-o18"/>
+                            <constraint firstItem="VDb-FO-AUY" firstAttribute="leading" secondItem="D2b-NW-I6p" secondAttribute="leading" constant="16" id="ZfU-N3-3hV"/>
+                            <constraint firstItem="D2b-NW-I6p" firstAttribute="trailing" secondItem="VDb-FO-AUY" secondAttribute="trailing" constant="16" id="c10-JU-CKq"/>
+                            <constraint firstItem="mdO-fn-Tge" firstAttribute="top" secondItem="VDb-FO-AUY" secondAttribute="bottom" constant="77" id="dOI-Vt-hU6"/>
+                            <constraint firstItem="VDb-FO-AUY" firstAttribute="top" secondItem="D2b-NW-I6p" secondAttribute="top" constant="183" id="dT3-J7-5Ka"/>
+                            <constraint firstItem="mdO-fn-Tge" firstAttribute="top" secondItem="VDb-FO-AUY" secondAttribute="bottom" constant="77" id="vhs-Hr-W82"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D2b-NW-I6p"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMi-9i-qsk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="429.375" y="317.95774647887322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bghome" width="275" height="80.5"/>
+    </resources>
+</document>
